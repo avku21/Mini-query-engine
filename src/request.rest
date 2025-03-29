@@ -1,0 +1,50 @@
+GET http://localhost:5001/api/auth/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQXZpbmFzaCIsImVtYWlsIjoieHl6QGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJiJDEwJFgyd0lNMjFZa1NueTZ3Q2ltWXhpRHU0NHNxdWp4d09CelJGUnlxQlRyNVM0YzNLei9xejJ1IiwiaWF0IjoxNzQzMjc3NDIwfQ.vSNHq6CHUutBEpT7qpCB5XH7esINXQp_FJb39Ji4Qek
+Content-Type: application/json
+###
+
+POST http://localhost:5001/api/auth/signup
+Content-Type: application/json
+
+{
+    "name" : "Avinash",
+    "email" : "xyz@gmail.com",
+    "password" : "12345678"
+}
+
+###
+POST http://localhost:5001/api/auth/login 
+Content-Type: application/json
+
+{
+    "name" : "Avinash",
+    "email" : "xyz@gmail.com",
+    "password" : "12345678"
+}
+
+###
+POST http://localhost:5001/api/query
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQXZpbmFzaCIsImVtYWlsIjoieHl6QGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJiJDEwJFgyd0lNMjFZa1NueTZ3Q2ltWXhpRHU0NHNxdWp4d09CelJGUnlxQlRyNVM0YzNLei9xejJ1IiwiaWF0IjoxNzQzMjc3NDIwfQ.vSNHq6CHUutBEpT7qpCB5XH7esINXQp_FJb39Ji4Qek
+
+{
+    "query" : "Give me all the cars launched in 2021"
+}
+
+###
+POST http://localhost:5001/api/explain
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQXZpbmFzaCIsImVtYWlsIjoieHl6QGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJiJDEwJFgyd0lNMjFZa1NueTZ3Q2ltWXhpRHU0NHNxdWp4d09CelJGUnlxQlRyNVM0YzNLei9xejJ1IiwiaWF0IjoxNzQzMjc3NDIwfQ.vSNHq6CHUutBEpT7qpCB5XH7esINXQp_FJb39Ji4Qek
+
+{
+    "query" : "Give me all the cars launched in 2021"
+}
+
+###
+POST http://localhost:5001/api/validate
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQXZpbmFzaCIsImVtYWlsIjoieHl6QGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJiJDEwJFgyd0lNMjFZa1NueTZ3Q2ltWXhpRHU0NHNxdWp4d09CelJGUnlxQlRyNVM0YzNLei9xejJ1IiwiaWF0IjoxNzQzMjc3NDIwfQ.vSNHq6CHUutBEpT7qpCB5XH7esINXQp_FJb39Ji4Qek
+
+{
+    "query" : "Give me all the cars launched in 2021"
+}
